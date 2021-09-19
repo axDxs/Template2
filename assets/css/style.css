@@ -55,7 +55,7 @@ p {
   color: #444;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 15px;
   color: #444;
@@ -63,13 +63,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 50px;
+
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
 }
 
 h2 {
   font-size: 38px;
-  line-height: 40px;
+  line-height: 34px;
 }
 
 h3 {
@@ -248,6 +250,9 @@ div#preloader {
   padding: 0;
   line-height: 1;
   font-weight: bold;
+  max-width: 6em;
+  max-height: 5.5em;
+  
 }
 
 #header .logo h1 span {
@@ -262,7 +267,7 @@ div#preloader {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  
 }
 
 @media (max-width: 768px) {
@@ -665,17 +670,18 @@ div#preloader {
 
 .single-well > a {
   display: block;
+  padding: 0 2em;
 }
 
 .single-well ul li {
   color: #444;
   display: block;
-  padding: 5px 0;
+  padding: 0 0;
 }
 
 .single-well ul li i {
   color: #3EC1D5;
-  margin-right: 5px;
+  margin-right: 2px;
   font-size: 18px;
 }
 
@@ -683,6 +689,12 @@ div#preloader {
   color: #444;
 }
 
+.abt-us{
+  margin-left: 5em;
+  padding-right: 3em;
+  max-width: 100%;
+  max-height: 100%;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1271,8 +1283,8 @@ div#preloader {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/background/slider-bg.jpg") no-repeat;
-  background-position: center center;
+  /* background: url("../img/background/slider-bg.jpg") no-repeat; */
+  background-color: white;background-position: center center;
   background-size: cover;
   position: relative;
 }
@@ -2062,6 +2074,8 @@ span.email-notes {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+
 .footer-area {
   padding: 40px 0;
   background: #f9f9f9;
