@@ -1686,6 +1686,45 @@ div#preloader {
   }
 }
 
+.mumbai-header{
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 100px;
+}
+
+.mumbai-img{
+  position: relative;
+  left: 650px;
+  bottom: 200px;
+  /* max-width: 140%; */
+}
+
+.usa-header{
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+.usa-img{
+  position: relative;
+  left: 650px;
+  bottom: 200px;
+  max-width: 50%;
+}
+.hyd-header{
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 50px;
+  /* margin-top: 50px; */
+}
+
+.hyd-img{
+  position: relative;
+  left: 650px;
+  bottom: 200px;
+  max-width: 60%;
+  max-height: 85%;
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
