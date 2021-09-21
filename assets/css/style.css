@@ -780,7 +780,7 @@ div#preloader {
   max-height: 100%;
   position: relative;
   left: 20px; */
-}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1054,7 +1054,7 @@ div#preloader {
     -webkit-transition: transform 0.4s ease-in-out;
 }
 
-h4:hover{
+.team h4:hover{
   text-decoration: underline;
 }
 .team .row{
@@ -2700,4 +2700,64 @@ span.email-notes {
   .slider-content {
     padding: 0;
   }
+}
+/* ---------------------------------------------------------------------- 
+ABOUT US
+----------------------------------------------------------------------  */
+
+.philosphy .p{ 
+}
+.philosophyImage {
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+/* .philosophyImage :hover{
+  background-color: tomato;
+} */
+.metrics{
+  padding-top: 80px;
+  text-align: center;
+  margin: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #dee0e0;
+}
+#philosophy .container2:hover .overlay {
+  opacity: 0.3;
+  font-size: large;
+}
+.container2 {
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.IGRCimage{
+  width: 100%;
 }
