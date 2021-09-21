@@ -747,7 +747,8 @@ div#preloader {
 
 .single-well > a {
   display: block;
-  padding: 0 2em;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .single-well ul li {
@@ -766,13 +767,19 @@ div#preloader {
   color: #444;
 }
 
-.abt-us{
+.explore{
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold ;
+  font-family: 'Raleway', sans-serif;
+}
+/* .abt-us{
   margin-left: 5em;
   padding-right: 3em;
   max-width: 100%;
   max-height: 100%;
   position: relative;
-  left: 20px;
+  left: 20px; */
 }
 /*--------------------------------------------------------------
 # Services
