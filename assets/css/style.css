@@ -1175,6 +1175,10 @@ h4:hover{
 .pst-content {
   padding-left: 10px;
 }
+#clients{
+    display: flex;
+    flex-direction: row;
+}
 
 #portfolio-flters {
   padding: 0;
