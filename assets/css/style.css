@@ -435,7 +435,8 @@ div#preloader {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(0, 0, 0);
+  border-radius: 10%;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -448,7 +449,7 @@ div#preloader {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #0d2529;
+  color: #3faec2;
 }
 
 .navbar .dropdown ul a i {
@@ -456,7 +457,7 @@ div#preloader {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #3ec1d5;
+  color: #ffffff;
 }
 
 .navbar .dropdown:hover > ul {
@@ -618,7 +619,7 @@ div#preloader {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.459);
 }
 
 #hero .carousel-container {
@@ -742,9 +743,20 @@ div#preloader {
 # About
 --------------------------------------------------------------*/
 .about-area {
-  background-color: #f9f9f9;
+  /* background-color: #91BAD6; */
+  background-color: rgb(221, 221, 221);
 }
 
+.philosophyImage{
+  background-color: black;
+}
+.metrics{
+  text-align: center;
+}
+
+/* #about .container{
+  background-color: white;
+} */
 .single-well > a {
   display: block;
   padding: 30px 0;
@@ -768,11 +780,15 @@ div#preloader {
 }
 
 .explore{
-  color: #000;
+  color:#000000;
   font-size: 1rem;
-  font-weight: bold ;
+  font-weight :normal ;
   font-family: 'Raleway', sans-serif;
 }
+/* .explore :hover{
+  text-decoration: underline;
+  color: white;
+} */
 /* .abt-us{
   margin-left: 5em;
   padding-right: 3em;
@@ -1176,8 +1192,16 @@ div#preloader {
   padding-left: 10px;
 }
 #clients{
+  /* background-color: #73A5C6; */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.flexCard{
+  flex: 0 0 33.333333%;
 }
 
 #portfolio-flters {
@@ -1597,6 +1621,7 @@ div#preloader {
 # Contact
 --------------------------------------------------------------*/
 .contact-area {
+  background-color :#528AAE;
   height: auto;
   width: 100%;
 }
@@ -2704,68 +2729,4 @@ span.email-notes {
   .slider-content {
     padding: 0;
   }
-}
-/* ---------------------------------------------------------------------- 
-ABOUT US
-----------------------------------------------------------------------  */
-
-.philosphy .p{ 
-}
-.philosophyImage {
-  margin-left: auto;
-  margin-right:auto;
-  display: block;
-  width: 80%;
-  height: auto;
-}
-
-/* .philosophyImage :hover{
-  background-color: tomato;
-} */
-.metrics{
-  padding-top: 80px;
-  text-align: center;
-  margin: auto;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #dee0e0;
-}
-#philosophy .container2:hover .overlay {
-  opacity: 0.3;
-  font-size: large;
-}
-.container2 {
-  margin-left: auto;
-  margin-right:auto;
-  display: block;
-  position: relative;
-  width: 100%;
-}
-.text {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.IGRCimage{
-  width: 100%;
-}
-
-.list{
-  line-height: 2.2em;
 }
