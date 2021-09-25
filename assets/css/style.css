@@ -347,6 +347,10 @@ div#preloader {
   
 }
 
+.logo{
+  position: relative;
+  right: 55px;
+}
 @media (max-width: 768px) {
   #header {
     height: 64px;
@@ -747,10 +751,11 @@ div#preloader {
   background-color: rgb(221, 221, 221);
 }
 
-.philosophyImage{
+/* .philosophyImage{
   background-color: black;
-}
+} */
 .metrics{
+  font-size :medium;
   text-align: center;
 }
 
@@ -1625,7 +1630,9 @@ div#preloader {
   height: auto;
   width: 100%;
 }
-
+#linkto .a{
+  color: orange;
+}
 .socialLinks{
   text-align: center;
 }
@@ -2423,7 +2430,7 @@ span.email-notes {
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
-  background: #3EC1D5;
+  background: #3ec1d5;
   border: 1px solid #3EC1D5;
   color: #fff;
 }
@@ -2729,4 +2736,56 @@ span.email-notes {
   .slider-content {
     padding: 0;
   }
+}
+
+
+
+
+
+
+/* .......................................................... */
+
+#philosophy .container {
+  position: relative;
+  width: 50%;
+}
+
+/* #philosophy  .image {
+
+  display: block;
+  width: 10px;
+  height: 10px;
+} */
+
+.aboutImage{
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #676c6d;
+}
+
+#philosophy  .container:hover .overlay {
+  opacity: 0.3;
+
+}
+
+#philosophy .text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
