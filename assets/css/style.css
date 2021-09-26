@@ -657,13 +657,13 @@ div#preloader {
 }
 
 #hero p {
-  width: auto;
-  height: auto;
-  font-size: 28px;
+  width: 70vw;
+  font-size: 24px;
   line-height: 1.2;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px;
   color: #fff;
   justify-content: center;
+  padding: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -672,9 +672,9 @@ div#preloader {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   #hero p {
-    font-size: 28px;
+    font-size: 1.5px;
     line-height: 1.2;
   }
 }
