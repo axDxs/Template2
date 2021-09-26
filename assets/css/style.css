@@ -3130,3 +3130,20 @@ span.email-notes {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+/* ----------------blog--------------- */
+/* ----------------blog--------------- */
+/* ----------------blog--------------- */
+
+
+#blog .card-img-top{
+  width: 30vh;
+  height: 15vh;
+}
+
+#blog .card{
+  height: 40vh;
+  width: 30vh;
+  margin:20px;
+}
