@@ -668,14 +668,14 @@ div#preloader {
 
 @media (min-width: 1024px) {
   #hero p {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media (max-width: 375px) {
   #hero p {
-    font-size: 1.5px;
-    line-height: 1.2;
+    font-size: 1px;
+    line-height: 0.7;
   }
 }
 
