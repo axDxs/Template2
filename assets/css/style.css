@@ -1275,6 +1275,12 @@ input:nth-of-type(5):checked ~ main#carouse {
 /* } */
 
 
+#team{
+  background-image: linear-gradient(to bottom , white,  #528AAE);
+}
+#advisors{
+  background-image: linear-gradient(to top, white,  #528AAE);
+}
 .team .member {
   text-align: center;
   margin-bottom: 20px;
