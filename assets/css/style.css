@@ -642,11 +642,13 @@ div#preloader {
   text-align: center;
 }
 
+
 #hero h2 {
   color: rgb(194, 194, 194);
   margin-bottom: 20px;
+  font-family:'Gill Sans, sans-serif';
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -1737,13 +1739,15 @@ input:nth-of-type(5):checked ~ main#carouse {
 # Contact
 --------------------------------------------------------------*/
 .contact-area {
-  background-color :#528AAE;
+  /* background-color :#528AAE; */
+  background-color :rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom  , white , #528AAE);
   height: auto;
   width: 100%;
 }
-#linkto .a{
-  color: orange;
-}
+
+
+
 .socialLinks{
 
   text-align: center;
