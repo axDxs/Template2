@@ -1276,10 +1276,14 @@ input:nth-of-type(5):checked ~ main#carouse {
 
 
 #team{
-  background-image: linear-gradient(to bottom , white,  #528AAE);
+  background-image: linear-gradient(to bottom , white,  #528bae95);
 }
 #advisors{
-  background-image: linear-gradient(to top, white,  #528AAE);
+  /* background-image: linear-gradient(to top, white,  #528AAE); */
+background-color:  #528bae95;
+}
+#IGRC{
+  background-image: linear-gradient(to top , white,  #528bae95);
 }
 .team .member {
   text-align: center;
