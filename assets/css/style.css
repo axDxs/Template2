@@ -985,7 +985,8 @@ input:nth-of-type(5):checked ~ main#carouse {
   background-color: black;
 } */
 .metrics{
-  font-size :medium;
+  /* font-size :medium; */
+  font-size :20px;
   text-align: center;
 }
 
@@ -1297,6 +1298,7 @@ input:nth-of-type(5):checked ~ main#carouse {
 
 
 #team{
+  /* background-image: linear-gradient(to bottom , white,  #528bae95); */
   background-image: linear-gradient(to bottom , white,  #528bae95);
 }
 #advisors{
@@ -1626,11 +1628,15 @@ background-color:  #528bae95;
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials{
-  background-color :#528bae87;
+  /* background-color :#528bae87; */
+  background-color :#3A5894;
+
   /* background-color :rgb(255, 255, 255); */
   
   /* background-image: linear-gradient(to left,rgba(255, 255, 255, 0) ,rgba(112, 112, 112, 0.44)) , linear-gradient(to right   , white , #528bae62); */
-  /* background-image: linear-gradient(to bottom, #528bae1c , white); */
+  /* background-image: linear-gradient(to bottom, #3A5894 , white) , linear-gradient(to top , #3A5894 , white); */
+  /* background: linear-gradient(180deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), */
+            /* linear-gradient(360deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
 
   padding-top: 65px;
   
@@ -2951,17 +2957,17 @@ span.email-notes {
   /* width: 100%; */
   opacity: 0;
   transition: .5s ease;
-  background-color: #676c6d;
+  background-color: #676c6d51;
 }
 
 #philosophy  .container:hover .overlay {
-  opacity: 0.3;
+  opacity: 1;
 
 }
 
 #philosophy .text {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;

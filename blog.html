@@ -42,7 +42,7 @@
               <li><a href="team.html#advisors">Advisory Board</a></li>
             </ul>
           </li>
-          <li><a class="active"href="blog.html" target="_blank">Blog</a></li>
+          <li><a class="active"href="blog.html">Blog</a></li>
          
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
         </ul>
@@ -120,6 +120,60 @@
     span.appendChild(readMore);
     readMore.classList.add('ready-btn');
     readMore.innerHTML = "Read more";
+    
+    readMore.addEventListener('click',()=>{
+      console.log(response[i]);
+      const cont = document.getElementById('container');
+      var child = cont.lastElementChild; 
+        while (child) {
+            cont.removeChild(child);
+            child = cont.lastElementChild;
+        }
+
+        const d = document.createElement('div');
+    d.classList.add('col-md-12');
+    d.classList.add('col-sm-12');
+    d.classList.add('col-xs-12');
+    
+
+    const sBlog = document.createElement('div');
+    sBlog.classList.add('single-blog');
+    d.appendChild(sBlog)
+
+    const sBlogI = document.createElement('div');
+    sBlogI.classList.add('single-blog-img');
+    sBlog.appendChild(sBlogI);
+
+    const sBlogLink = document.createElement('a');
+    sBlogLink.href = "blog-details.html";
+    sBlogI.appendChild(sBlogLink);
+
+    const sBlogImg = document.createElement('img');
+    sBlogImg.src = response[i].Cover.url;
+    sBlogLink.appendChild(sBlogImg);
+
+    const bLt = document.createElement('div');
+    const Title = document.createElement('h4');
+    const link = document.createElement('a');
+    const para = document.createElement('p');
+
+    bLt.classList.add('blog-text');
+
+    link.innerHTML = response[i].Title;
+    para.innerHTML = response[i].Subtitle;
+
+    bLt.appendChild(Title);
+    Title.appendChild(link);
+    bLt.appendChild(para);
+    sBlog.appendChild(bLt);
+
+    const mainP = document.createElement('p');
+    mainP.innerHTML = response[i].Content;
+    d.appendChild(mainP);
+    document.getElementById('container').appendChild(d);
+
+        
+    })
 
     sBlog.appendChild(span);
 
