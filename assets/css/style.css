@@ -1702,9 +1702,16 @@ background-color:  #528bae95;
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin: 100px 50px 50px 50px;
   position: relative;
 }
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+ .swiper-pagination-custom, .swiper-pagination-fraction 
+ { bottom: 10px;
+   left: -45px; 
+   width: 100%;
+ }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
