@@ -1709,6 +1709,10 @@ background-color:  #528bae95;
   margin: 15px auto 15px auto;
 }
 
+.testimonials .testimonial-item  :hover{
+  transform: scale(1.08);
+}
+
 .testimonials .swiper-pagination {
   margin: 50px 50px 50px 50px;
   position: relative;
