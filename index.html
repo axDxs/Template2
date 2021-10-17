@@ -193,8 +193,76 @@
   <main id="main">
 
 
-    
+<!-- counter -->
+<br><br>
 
+<div class="section-headline text-center tst">
+  <h2>Our Impact</h2>
+</div>
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<div class="container">
+<div class="row">
+  <br/>
+ <div class="col text-center">
+<h2></h2>
+<p></p>
+</div>
+
+         
+<script>
+async function stats(){
+  const data = await fetch('https://pgs-cms.herokuapp.com/stats');
+  const json = await data.json();
+  console.log(json);
+  const target = document.getElementById("patients");
+  console.log(target.dataset.to);
+  target.dataset.to = 5000;
+  console.log(target.dataset.to);
+
+}
+
+stats();
+</script>
+</div>
+<div class="row text-center">
+      <div class="col">
+      <div class="counter">
+  <i class="fa fa-code fa-2x"></i>
+  <h2 class="timer count-title count-number" data-to="250000" data-speed="3000" id="patients">2</h2>
+   <p class="count-text ">patients served</p>
+</div>
+      </div>
+          <div class="col">
+           <div class="counter">
+  <i class="fa fa-coffee fa-2x"></i>
+  <h2 class="timer count-title count-number" data-to="7500" data-speed="3000" id="lpg"></h2>
+  <p class="count-text ">kg LPG saved </p>
+</div>
+          </div>
+          <div class="col">
+              <div class="counter">
+  <i class="fa fa-lightbulb-o fa-2x"></i>
+  <h2 class="timer count-title count-number" data-to="800" data-speed="3000" id="jobs"></h2>
+  <p class="count-text ">employment opportunities created </p>
+</div></div>
+          <div class="col">
+          <div class="counter">
+  <i class="fa fa-bug fa-2x"></i>
+  <h2 class="timer count-title count-number" data-to="1000" id="artisans" data-speed="3000"></h2>
+  <p class="count-text ">artisans provided </p>
+</div>
+          </div>
+     </div>
+</div>
+
+
+
+<br><br>
+
+
+<br><br>  
+<hr>
     <!-- ======= About Section ======= -->
     <div id="about" class="about-area area-padding ">
       <div class="container">
@@ -340,73 +408,9 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-
-
-   <!-- counter -->
-   <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-<div class="container">
-	<div class="row">
-	    <br/>
-	   <div class="col text-center">
-		<h2></h2>
-		<p></p>
-		</div>
-		
-             
-  <script>
-    async function stats(){
-      const data = await fetch('https://pgs-cms.herokuapp.com/stats');
-      const json = await data.json();
-      console.log(json);
-      const target = document.getElementById("patients");
-      console.log(target.dataset.to);
-      target.dataset.to = 5000;
-      console.log(target.dataset.to);
-
-    }
-
-    stats();
-  </script>
-	</div>
-		<div class="row text-center">
-	        <div class="col">
-	        <div class="counter">
-      <i class="fa fa-code fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="250000" data-speed="3000" id="patients">2</h2>
-       <p class="count-text ">patients served</p>
-    </div>
-	        </div>
-              <div class="col">
-               <div class="counter">
-      <i class="fa fa-coffee fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="7500" data-speed="3000" id="lpg"></h2>
-      <p class="count-text ">kg LPG saved </p>
-    </div>
-              </div>
-              <div class="col">
-                  <div class="counter">
-      <i class="fa fa-lightbulb-o fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="800" data-speed="3000" id="jobs"></h2>
-      <p class="count-text ">employment opportunities created </p>
-    </div></div>
-              <div class="col">
-              <div class="counter">
-      <i class="fa fa-bug fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="1000" id="artisans" data-speed="3000"></h2>
-      <p class="count-text ">artisans provided </p>
-    </div>
-              </div>
-         </div>
-</div>
-
-
-    
-<br><br>
-
-  
- <br><br> --> 
     <hr>
-    <br><br>
+
+   
     <!-- ======= Blog Section ======= -->
     <div class="vidContainer">
       <video id="bigDaddyVideo" src="./assets/3.mp4#t=03" controls></video>

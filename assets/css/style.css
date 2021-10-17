@@ -528,13 +528,13 @@ div#preloader {
   
   .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 35px;
+  right: 5px;
   }
   
   .navbar-mobile ul {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 55px;
   right: 15px;
   bottom: 15px;
@@ -1758,18 +1758,18 @@ background-color:  #528bae95;
 
 
 /* counter */
-/* .counter {
-  background-color:#252222;
+ .counter {
+  background-color:#ffffff;
   padding: 20px 0;
   border-radius: 5px;
-} */
+} 
 
 #portHeader{
   margin-bottom: 0px;
 }
 
 
-/* .count-title {
+ .count-title {
   font-size: 40px;
   font-weight: normal;
   margin-top: 10px;
@@ -1783,15 +1783,15 @@ background-color:  #528bae95;
   margin-top: 10px;
   margin-bottom: 0;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .fa-2x {
   margin: 0 auto;
   float: none;
   display: table;
-  color: #ffffff;
-} */
+  color: #000000;
+} 
 
 /*--------------------------------------------------------------
 # Quote
