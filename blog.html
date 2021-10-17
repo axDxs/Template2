@@ -179,7 +179,72 @@
 
     document.getElementById('container').appendChild(d);
     }
-      
+    
+    //vid
+    const blogVidRes = await fetch('https://pgs-cms.herokuapp.com/videos');
+    const blogVid = await blogVidRes.json();
+    for(let i=0;i<blogVid.length;i++){
+      const url = await blogVid[i].Video.url;
+      console.log(url);
+    const vidBlock = document.createElement("VIDEO");
+    const src = document.createElement('source');
+
+    src.src = url;
+    src.type="video/mp4"
+    console.log(src);
+
+    vidBlock.setAttribute("width", "720");
+    vidBlock.setAttribute("height", "600");
+    
+    vidBlock.classList.add('single-blog-img');
+    vidBlock.setAttribute("controls", "controls");
+
+    vidBlock.appendChild(src);
+
+    const d = document.createElement('div');
+    d.classList.add('col-md-12');
+    d.classList.add('col-sm-12');
+    d.classList.add('col-xs-12');
+
+    const sBlog = document.createElement('div');
+    sBlog.classList.add('single-blog');
+    d.appendChild(sBlog)
+
+    const sBlogI = document.createElement('div');
+    // sBlogI.classList.add('single-blog-img');
+    sBlog.appendChild(sBlogI);
+
+    const sBlogLink = document.createElement('a');
+    sBlogLink.href = "blog-details.html";
+    sBlogI.appendChild(sBlogLink);
+    
+    const title = document.createElement('h4');
+    title.innerHTML = blogVid[i].Title;
+    
+    sBlogLink.appendChild(vidBlock);
+    
+    const bLt = document.createElement('div');
+    const Title = document.createElement('h4');
+    const subtitle = document.createElement('p');
+    const link = document.createElement('a');
+
+    bLt.classList.add('blog-text');
+
+    link.innerHTML = blogVid[i].Title;
+    subtitle.innerHTML = blogVid[i].Subtitle;
+    
+    console.log(subtitle);
+    
+    bLt.appendChild(Title);
+    Title.appendChild(link);
+    bLt.appendChild(subtitle);
+    sBlog.appendChild(bLt);
+
+    document.getElementById('container').appendChild(d);
+    }
+    
+    //Break
+
 
   }
 
