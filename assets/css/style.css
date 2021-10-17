@@ -505,7 +505,7 @@ div#preloader {
   transition: 0.5s;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -1631,16 +1631,12 @@ background-color:  #528bae95;
   /* background-color :#528bae87; */
   background-color :#ffffff;
 
-  /* background-color :rgb(255, 255, 255); */
-  
-  /* background-image: linear-gradient(to left,rgba(255, 255, 255, 0) ,rgba(112, 112, 112, 0.44)) , linear-gradient(to right   , white , #528bae62); */
-  /* background-image: linear-gradient(to bottom, #3A5894 , white) , linear-gradient(to top , #3A5894 , white); */
-  /* background: linear-gradient(180deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), */
-            /* linear-gradient(360deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-
   padding-top: 65px;
   
-  
+}
+
+.h2 .portfolio-header {
+  padding-top: 0px;
 }
 .testimonials .testimonial-wrap {
   padding-right: 120px;
@@ -1745,13 +1741,18 @@ background-color:  #528bae95;
 
 
 /* counter */
-.counter {
-  background-color:#f5f5f5;
+/* .counter {
+  background-color:#252222;
   padding: 20px 0;
   border-radius: 5px;
+} */
+
+#portHeader{
+  margin-bottom: 0px;
 }
 
-.count-title {
+
+/* .count-title {
   font-size: 40px;
   font-weight: normal;
   margin-top: 10px;
@@ -1765,14 +1766,15 @@ background-color:  #528bae95;
   margin-top: 10px;
   margin-bottom: 0;
   text-align: center;
+  color: white;
 }
 
 .fa-2x {
   margin: 0 auto;
   float: none;
   display: table;
-  color: #4ad1e5;
-}
+  color: #ffffff;
+} */
 
 /*--------------------------------------------------------------
 # Quote
@@ -3003,4 +3005,35 @@ span.email-notes {
   height: 40vh;
   width: 30vh;
   margin:20px;
+}
+
+/* video */
+#bigDaddyVideo{
+  width: 100vh;
+  height: 60vh;
+}
+
+.vidContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #bigDaddyVideo{
+    width: 50vh;
+    height: 30vh;
+  }
+}
+
+.testimonial-img:hover{
+  cursor: pointer;
+}
+
+.abt-us{
+  border: solid 1px black;
+}
+
+#testimonials{
+  margin-top: -60px;
 }

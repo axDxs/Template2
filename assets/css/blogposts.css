@@ -1317,4 +1317,22 @@ span.email-notes {
 }
 
 
+.blog-video{
+  width: 100vh;
+  height: 60vh;
+}
 
+@media only screen and (max-width: 768px) {
+  .blog-video{
+    width: 50vh;
+    height: 30vh;
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .blog-video{
+    width: 40vh;
+    height: 30vh;
+  }
+}
