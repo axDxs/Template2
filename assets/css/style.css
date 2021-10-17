@@ -2958,7 +2958,35 @@ span.email-notes {
 
 
 
+#joinus .raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
 
+#joinus .raise {
+  --color: #000000;
+  --hover: #3A5894;
+  font-size : 20px
+}
+#joinus button {
+  color: var(--color);
+  transition: 0.25s;
+}
+#joinus button:hover, button:focus {
+  border-color: var(--hover);
+  /* color: #fff; */
+  color: rgb(95, 95, 95);
+}
+
+#joinus button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
 
 /* .......................................................... */
 
