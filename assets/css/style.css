@@ -1102,7 +1102,7 @@ input:nth-of-type(5):checked ~ main#carouse {
   content: '»';
   position: absolute;
   opacity: 0;  
-  top: 16px;
+  top: 10px;
   right: -20px;
   transition: 0.5s;
 }
