@@ -1055,13 +1055,60 @@ input:nth-of-type(5):checked ~ main#carouse {
 # Services
 --------------------------------------------------------------*/
 .joinus{
+  height: 50vh;
+  padding-top: 130px;
   text-align: center;
+  background: url('../img/background/pngegg\ \(1\).png');
+  background-size: cover;
 }
 
 
+.exploreblog{
+  text-align: center;
+  margin-top: -10px;
+}
 
+.exploreblog button {
+  border-radius: 4px;
+  background-color: #3a5894;
+  /* background-color: #5ca1e1; */
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
 
+.exploreblog button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.exploreblog button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 16px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.exploreblog button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.exploreblog button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 
 
 
@@ -2965,7 +3012,10 @@ span.email-notes {
 }
 
 #joinus .raise {
-  --color: #000000;
+  /* --color: #000000; */
+  /* --hover: #3A5894; */
+  
+  --color: rgb(216, 216, 216);
   --hover: #3A5894;
   font-size : 20px
 }
