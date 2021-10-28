@@ -92,7 +92,7 @@
     sBlog.appendChild(sBlogI);
 
     const sBlogLink = document.createElement('a');
-    sBlogLink.href = "blog-details.html";
+    // sBlogLink.href = "blog-details.html";
     sBlogI.appendChild(sBlogLink);
 
     const sBlogImg = document.createElement('img');
@@ -145,7 +145,7 @@
     sBlog.appendChild(sBlogI);
 
     const sBlogLink = document.createElement('a');
-    sBlogLink.href = "blog-details.html";
+    // sBlogLink.href = "blog-details.html";
     sBlogI.appendChild(sBlogLink);
 
     const sBlogImg = document.createElement('img');
@@ -162,16 +162,26 @@
     link.innerHTML = response[i].Title;
     para.innerHTML = response[i].Subtitle;
 
+    const goBack = document.createElement('a');
+    goBack.innerHTML = "Return to Blog";
+    goBack.href = "blog.html"
+    goBack.classList.add('btn');  
+    goBack.classList.add('btn-primary');  
     bLt.appendChild(Title);
     Title.appendChild(link);
+    
     bLt.appendChild(para);
+
     sBlog.appendChild(bLt);
+
+    
 
     const mainP = document.createElement('p');
     mainP.innerHTML = response[i].Content;
     d.appendChild(mainP);
     document.getElementById('container').appendChild(d);
-
+      
+    document.getElementById('container').appendChild(goBack);
         
     })
 
@@ -212,7 +222,7 @@
     sBlog.appendChild(sBlogI);
 
     const sBlogLink = document.createElement('a');
-    sBlogLink.href = "blog-details.html";
+    // sBlogLink.href = "blog-details.html";
     sBlogI.appendChild(sBlogLink);
     
     const title = document.createElement('h4');
@@ -309,6 +319,7 @@
 
 
 
+<script src="assets/js/main.js"></script>
 
 
 

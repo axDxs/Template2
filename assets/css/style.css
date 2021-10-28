@@ -454,7 +454,7 @@ div#preloader {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #ffffff;
+  color: #000000;
   }
   
   .navbar .dropdown ul a i {
@@ -653,8 +653,10 @@ div#preloader {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1.2;
+    /* font-weight: bold; */
+    text-align: center;
   }
 }
 
