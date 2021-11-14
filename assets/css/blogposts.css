@@ -105,7 +105,7 @@ outline: 0 none;
 
 body {
 background: #fff none repeat scroll 0 0;
-color: #444;
+color: rgb(255, 255, 255);
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 text-align: left;
@@ -330,7 +330,9 @@ padding: 0;
 margin: 0;
 
 }
-
+.goBack {
+  text-align: center;
+}
 .logo{
 position: relative;
 right: 55px;
@@ -410,7 +412,7 @@ margin-left: 5px;
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-color: #3A5894;
+color: #ffffff;
 }
 
 .navbar .dropdown ul {
@@ -437,7 +439,7 @@ min-width: 200px;
 padding: 10px 20px;
 font-size: 14px;
 text-transform: none;
-color: #3faec2;
+color: #ffffff;
 }
 
 .navbar .dropdown ul a i {
@@ -1417,19 +1419,48 @@ span.email-notes {
 .blog-video{
   width: 100vh;
   height: 60vh;
+  margin-left: 275px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .blog-video{
     width: 50vh;
     height: 30vh;
-    margin-left: -30px;
+    margin-left: 5px;
+    justify-content: center;
+    padding: 10px;
   }
 }
 
-@media only screen and (max-width: 640px) {
+
+/* @media only screen and (max-width: 768px) {
   .blog-video{
-    width: 40vh;
+    width: 50vh;
     height: 30vh;
+  }
+} */
+
+@media only screen and (max-width: 1366px) {
+  .blog-video{
+    width: 50vh;
+    height: 30vh;
+    justify-content: center;
+    margin-left: 5px;
+    padding: 20px;
+  }
+}
+
+.btn-primary{
+  margin-top: 450px;
+  position: absolute;
+  margin-left: 550px;
+  
+}
+
+@media only screen and (max-width: 900px) {}
+.btn-primary{
+  margin-top: 250px;
+  position: fixed;
+  margin-left: 150px;
   }
 }

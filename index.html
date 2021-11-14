@@ -222,7 +222,7 @@
          
 <script>
 async function stats(){
-  const data = await fetch('https://pgs-cms.herokuapp.com/stats');
+  const data = await fetch('https://pegasusfin-cms.herokuapp.com/stats');
   const json = await data.json();
   console.log(json);
   const target = document.getElementById("patients");
