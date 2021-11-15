@@ -1419,7 +1419,9 @@ span.email-notes {
 .blog-video{
   width: 100vh;
   height: 60vh;
-  margin-left: 285px;
+  justify-content: center;
+  margin-left: 22.5%;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1453,15 +1455,25 @@ span.email-notes {
 .btn-primary{
   /* margin-top: 50px; */
   /* position: relative; */
-  margin-left: 575px;
+  /* margin-left: 575px;
   color: #3A5894;
-  
+   */
 }
-
+/* 
 @media only screen and (max-width: 850px) {
 .btn-primary{
   margin-top: 250px;
   position: fixed;
   margin-left: 150px;
   }
+} */
+
+.goback-btn{
+  margin-left: 45%;
+  padding: 10px;
+  background-color: #3e73dd;
+  color: #000;
+  border-radius: 5px;
+  
+  
 }

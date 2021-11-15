@@ -165,8 +165,10 @@
     const goBack = document.createElement('a');
     goBack.innerHTML = "Return to Blog";
     goBack.href = "blog.html"
-    goBack.classList.add('btn');  
-    goBack.classList.add('btn-primary');  
+    //goBack.classList.add('btn');  
+    goBack.classList.add('goback-btn');  
+    //goBack.classList.add('btn-primary');  
+    
     bLt.appendChild(Title);
     Title.appendChild(link);
     
@@ -177,9 +179,11 @@
     const mainP = document.createElement('p');
     mainP.innerHTML = response[i].Content;
     d.appendChild(mainP);
+
+    
+
     document.getElementById('container').appendChild(d);
-      
-    document.getElementById('container').appendChild(goBack);
+   
     
     if(response[i].Media.length>0){
       let L = await response[i].Media.length;
@@ -215,6 +219,10 @@
         }
       }
     }
+    document.getElementById('container').appendChild(goBack);
+    const br = document.createElement('div');
+    br.innerHTML = "A"
+    document.getElementById('container').appendChild(br);
 
     })
 
@@ -279,7 +287,7 @@
     Title.appendChild(link);
     bLt.appendChild(subtitle);
     sBlog.appendChild(bLt);
-
+      
     document.getElementById('container').appendChild(d);
     }
     
