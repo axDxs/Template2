@@ -1175,7 +1175,7 @@ background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50
 }
 
 .post-information .entry-meta span a {
-  color: #444;
+  color: rgb(0, 0, 0);
   display: inline-block;
   padding: 10px 0;
 }
@@ -1240,7 +1240,7 @@ background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50
 
 .sharing-icon a {
   border: 1px solid #444;
-  color: #444;
+  color: rgb(0, 0, 0);
   display: block;
   float: left;
   font-size: 18px;
@@ -1354,7 +1354,7 @@ span.email-notes {
 }
 
 .comment-respond p {
-  color: #444;
+  color: rgb(0, 0, 0);
   margin-bottom: 5px;
 }
 
@@ -1381,7 +1381,7 @@ span.email-notes {
   border: 1px solid #3A5894;
   border-radius: 20px;
   box-shadow: none;
-  color: #444;
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -1419,7 +1419,9 @@ span.email-notes {
 .blog-video{
   width: 100vh;
   height: 60vh;
-  margin-left: 275px;
+  justify-content: center;
+  margin-left: 22.5%;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1451,16 +1453,27 @@ span.email-notes {
 }
 
 .btn-primary{
-  margin-top: 850px;
-  position: fixed;
-  margin-left: 550px;
-  
+  /* margin-top: 50px; */
+  /* position: relative; */
+  /* margin-left: 575px;
+  color: #3A5894;
+   */
 }
-
+/* 
 @media only screen and (max-width: 850px) {
 .btn-primary{
   margin-top: 250px;
   position: fixed;
   margin-left: 150px;
   }
+} */
+
+.goback-btn{
+  margin-left: 45%;
+  padding: 10px;
+  background-color: #3e73dd;
+  color: #000;
+  border-radius: 5px;
+  
+  
 }
