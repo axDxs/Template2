@@ -1404,7 +1404,7 @@ span.email-notes {
 }
 
 .comment-respond input[type=submit]:hover {
-  border: 1px solid #3A5894;
+  border: 1px solid #ffffff;
   color: #fff;
   background: #3A5894;
 }
@@ -1419,9 +1419,11 @@ span.email-notes {
 .blog-video{
   width: 100vh;
   height: 60vh;
-  justify-content: center;
-  margin-left: 22.5%;
+  /* justify-content: center; */
+  margin: 0 auto;
   padding-bottom: 20px;
+  display: block;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1440,9 +1442,10 @@ span.email-notes {
 .goback-btn{
   margin-left: 45%;
   padding: 10px;
-  background-color: #3e73dd;
-  color: #000;
+  background-color: #fcda4f;
+  color: rgb(0, 0, 0);
   border-radius: 5px;
+  
   
   
 }

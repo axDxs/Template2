@@ -624,7 +624,7 @@ div#preloader {
 #hero .carousel-item::before {
   content: '';
   /* background-color: rgba(0, 0, 0, 0.459); */
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
 #hero .carousel-container {
@@ -653,11 +653,13 @@ div#preloader {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.2;
     /* font-weight: bold; */
     text-align: center;
   }
+
+  
 }
 
 #hero p {
@@ -1459,10 +1461,11 @@ background-color:  #528bae95;
   color: #0e3c5e;
 }
 
-/* .teamimage{
+.teamimage{
   transition: all 0.4s ease-in-out;
+  width: 400px;
 }
-.teamimagage:hover{
+/* .teamimagage:hover{
   filter: none;
   transform: scale(1.2);
 
@@ -3143,4 +3146,62 @@ span.email-notes {
 
 #testimonials{
   margin-top: -60px;
+}
+
+
+
+/*video grid*/
+
+.video-container {
+  display: grid;
+  grid-template-columns: 66.3% 33.3%;
+  grid-auto-flow: row;
+  
+}
+.video-large {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: #ccc;
+  height: 100%;
+}
+.video-small-top, .video-small-bottom {
+  border: 1px solid #ccc;
+  height: 100%;
+}
+.video-container iframe{ /*change according to your need*/
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  border: 20px solid rgb(255, 255, 255);
+  width: auto;
+}
+
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-container .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;  }
 }
