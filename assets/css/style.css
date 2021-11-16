@@ -624,7 +624,7 @@ div#preloader {
 #hero .carousel-item::before {
   content: '';
   /* background-color: rgba(0, 0, 0, 0.459); */
-  background-color: rgba(0,0,0,0.3);
+  /* background-color: rgba(0,0,0,0.3); */
 }
 
 #hero .carousel-container {
@@ -644,11 +644,13 @@ div#preloader {
 
 
 #hero h2 {
-  color: rgb(194, 194, 194);
+  /* color: rgb(194, 194, 194); */
+  color:white;
+
   margin-bottom: 20px;
   /* font-family:'Gill Sans, sans-serif'; */
   font-size: 30px;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
