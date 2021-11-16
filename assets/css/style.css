@@ -3152,7 +3152,7 @@ span.email-notes {
 
 /*video grid*/
 
-.video-container {
+/* .video-container {
   display: grid;
   grid-template-columns: 66.3% 33.3%;
   grid-auto-flow: row;
@@ -3167,13 +3167,13 @@ span.email-notes {
 .video-small-top, .video-small-bottom {
   border: 1px solid #ccc;
   height: 100%;
-}
-.video-container iframe{ /*change according to your need*/
+} */
+/* .video-container iframe{ 
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: 300px;
-}
+} */
 
 .grid {
   display: grid;
