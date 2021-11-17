@@ -595,6 +595,18 @@ div#preloader {
   }
 }
 
+#hero .main-head {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media (max-width: 500px) {
+  #hero .main-head {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
 #hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
   position: absolute;
   top: 0;
