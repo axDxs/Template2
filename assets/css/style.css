@@ -338,13 +338,26 @@ div#preloader {
   
   .logo{
   position: relative;
-  right: 55px;
+  right: 15px;
+  width: 50px;
   }
+
+  /* @media only screen and (min-width: 500px) {
+    .logo{
+      position: relative;
+      right: 10px;
+      width: 40px;
+    } */
+   
   @media (max-width: 768px) {
   #header {
     height: 64px;
     background: rgba(0, 0, 0, 0.8);
   }
+
+  
+
+  
   #header .logo h1 {
     font-size: 28px;
   }
@@ -1064,7 +1077,7 @@ input:nth-of-type(5):checked ~ main#carouse {
 --------------------------------------------------------------*/
 .joinus{
   height: 25vh;
-  padding-top: 60px;
+  padding-top: 80px;
   text-align: center;
   background: url('../img/background/pngegg\ \(1\).png');
   background-size: cover;
@@ -1349,10 +1362,12 @@ input:nth-of-type(5):checked ~ main#carouse {
 }
 #advisors{
   /* background-image: linear-gradient(to top, white,  #528AAE); */
-background-color:  #528bae95;
+  background-image: linear-gradient(to top , white,  #528bae95);
+
 }
 #IGRC{
-  background-image: linear-gradient(to top , white,  #528bae95);
+  background-color:  #528bae95;
+  
 }
 .team .member {
   text-align: center;
