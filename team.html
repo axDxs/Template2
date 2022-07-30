@@ -64,10 +64,7 @@
   <br><br><br>
 
 
-  
-
-
-  <div class="section-headline text-center">
+  <!-- <div class="section-headline text-center">
     <h2 class="row">
         The Pegasus Team
     </h2>
@@ -113,67 +110,8 @@
     renderCore();
 </script>
 
-
-
-
-
-<body>
-  <div class="section-headline text-center" id="team">
-    <h2>
-      IMPACT, GOVERNANCE, RISK & COMPLIANCE COMMITTEE
-    </h2>
-    <p>
-      IGRC an external committee, which oversees the actions of the Investment Committee and ensures <br>
-        1. ESG Compliance and Sanity Checks for portfolio companies <br>
-        2. Impact parameter approval and monitoring of our portfolio companies
-    </p>
-  <section id="team" class="team">
-<div class="row">
-  <div id="IGRC" class="grid">
-     
-  </div>
-  </div>
-</div>
-</section>
-</body>
-<script>
-  const renderIGRC = async ()=>{
-      const block = document.getElementById('IGRC');
-      const data = await fetch('https://pegasusfin-cms.herokuapp.com/igrcs')
-      console.log(data);
-      const response = await data.json();
-      for(let i=0;i<response.length;i++){
-          const image = document.createElement('img');
-          const div = document.createElement('div');
-          const h3 = document.createElement('h3');
-          const h5 = document.createElement('h5');
-          const about = document.createElement('p');
-
-          image.src = await response[i].Image.url; 
-          h3.innerHTML = response[i].Name;
-          h5.innerHTML = response[i].Role;
-          about.innerHTML = response[i].About;
-
-          div.classList.add('member');
-          image.classList.add('teamimage');            
-
-          div.appendChild(image);
-          div.appendChild(h3);
-          div.appendChild(h5);
-          div.appendChild(about);
-          block.appendChild(div);
-      }
-  }
-
-
-
-
-
-  renderIGRC();
-</script> 
-
-
-<section id="IGRC" class="team">
+ -->
+<!-- <section id="IGRC" class="team">
   <div class="container">
 
     <br><br><br>
@@ -194,8 +132,8 @@
           <h4>SUHAS TULJAPURKAR</h4>
           </a>
 
-          <!-- <span>Founder and Managing Partner</span> -->
-          <p>
+          <span>Founder and Managing Partner</span> -->
+          <!-- <p>
             Suhas is the Founder and Managing Partner of Legasis Partners.
             In a career spanning over three decades Suhas initially acted as the General Counsel for major 
             corporations before turning into a full time professional. A rare blend of “In House” and full 
@@ -213,8 +151,8 @@
           <div class="member">
             <img src="assets/img/about/jaya.webp" class="teamimage" alt="">
             <h4> JAYA SINGHANIA</h4>
-            <!-- <span>Operating Partner</span> -->
-            <p>
+             <span>Operating Partner</span> -->
+            <!-- <p>
               Jaya is a general corporate lawyer with more than two decades of experience.  
               She has advised foreign and domestic clients across various sectors including real estate, 
               infrastructure, financial services, media, healthcare and mining with respect to domestic 
@@ -225,8 +163,8 @@
           </div>
         </div>
 
-</div>
-
+</div>   -->
+<!-- 
 <script src="assets/js/main.js"></script>
 
 
@@ -276,12 +214,12 @@
   }
 
   renderAdvisor();
-</script>
+</script> -->
 
 
 
 
-  <!-- <section id="team" class="team">
+  <section id="team" class="team">
     <div class="container">
 
       <br><br><br>
@@ -643,4 +581,4 @@
 
     </div>
     </div>
-  </section> -->
+  </section> 
